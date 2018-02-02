@@ -2,7 +2,7 @@
 
 /*
     For each Problem:
-        
+
     Test your function by hand in the browser's console to get it working.
     When you think it is finished, uncomment the call
     for its test function to see if it passes.
@@ -17,9 +17,9 @@
 /* Problem 1 (this is your demo that we'll solve in class)
 
 Write a function called sum() that takes in two numbers as
-arguments and then returns an array where the first element 
+arguments and then returns an array where the first element
 is the sum of those numbers, and the second element is a concatenated
-string that EXACTLY follows this example and uses 
+string that EXACTLY follows this example and uses
 the values that were input into the function:
 
 "The sum of 4 and 7 is 11."
@@ -49,12 +49,13 @@ were input into the function:
 */
 
 // Write your code here
-function multiply(a,b){ //eslint-disable-line
-
+function multiply(num,num2){ //eslint-disable-line
+    const numProd = num * num2;
+    return [numProd, 'The product of ' + num + ' and ' + num2 + ' is ' + numProd + '.'];
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply();
+testMultiply();
 
 
 /////////////////////////////////////
