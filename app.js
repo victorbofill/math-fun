@@ -83,11 +83,19 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
+    const sumOne = sum(a, b);
+    const sumTotal = sum(sumOne[0], c);
+    const prodOne = multiply(a, b);
+    const prodTotal = multiply(prodOne[0], c);
 
+    return [sumTotal[0], prodTotal[0],
+        a + ' and ' + b + ' and ' + c + ' sum to ' + sumTotal[0] + '.',
+        'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + prodTotal[0] + '.'
+    ];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 
 /////////////////////////////////////
