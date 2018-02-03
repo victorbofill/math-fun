@@ -121,11 +121,17 @@ IMPORTANT DETAIL! IMPORTANT DETAIL! IMPORTANT DETAIL!
 // Write your code here
 
 function sumArray(testArray){ //eslint-disable-line
+    const sumOne = sum(testArray[0], testArray[1]);
+    const sumTotal = sum(sumOne[0], testArray[2]);
 
+    return [sumTotal[0],
+        testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + sumTotal[0] + ' is their sum.'
+    ];
 }
 
+
 // Here is the test for sumArray(); uncomment it to run it
-// testSumArray();
+testSumArray();
 
 
 /////////////////////////////////////
@@ -153,9 +159,9 @@ new branch for your work on the next question!
 */
 
 // Write your code here
-function multiplyArray(testArray){ //eslint-disable-line
+// function multiplyArray(testArray){ //eslint-disable-line
 
-}
+// }
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray();
