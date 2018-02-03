@@ -158,10 +158,16 @@ code between GitHub and your laptop. Don't forget to create a
 new branch for your work on the next question!
 */
 
-// Write your code here
-// function multiplyArray(testArray){ //eslint-disable-line
+//Write your code here
+function multiplyArray(testArray){ //eslint-disable-line
+    const prodOne = multiply(testArray[0], testArray[1]);
+    const prodTotal = multiply(prodOne[0], testArray[2]);
 
-// }
+    return [prodTotal[0],
+        'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + prodTotal[0] + '.'
+    ];
+}
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray();
+testMultiplyArray();
